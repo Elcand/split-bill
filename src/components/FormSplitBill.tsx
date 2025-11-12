@@ -10,7 +10,7 @@ export default function FormSplitBill() {
       <label htmlFor="">🙋Tagihan x</label>
       <input type="text" name="" id="" disabled />
 
-      <label htmlFor="">🤑 Ditalangin Sama x</label>
+      <label htmlFor="">🤑 Ditalangin Sama</label>
       <select name="" id="">
         <option value="user">Kamu</option>
         <option value="friend">x</option>
