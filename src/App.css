@@ -5,6 +5,19 @@
   --color-light: #c5d1dd;
   --color-medium: #a4bcd4;
   --color-dark: #616974;
+  --color-text: #495057;
+  --color-bg: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-lightest: #2b2f36;
+    --color-light: #3a4049;
+    --color-medium: #505865;
+    --color-dark: #a4bcd4;
+    --color-text: #e6e6e6;
+    --color-bg: #1e2228;
+  }
 }
 
 * {
@@ -20,10 +33,12 @@ html {
 
 body {
   height: 100vh;
-  color: #495057;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .app {
@@ -64,7 +79,6 @@ body {
   grid-template-columns: 4.8rem 1fr auto;
   align-items: center;
   column-gap: 1.6rem;
-
   padding: 1.2rem;
   border-radius: 7px;
   transition: 0.5s;
@@ -114,9 +128,9 @@ form {
   display: grid;
   align-items: center;
   gap: 1.2rem;
-
   background-color: var(--color-lightest);
   border-radius: 7px;
+  transition: background-color 0.3s ease;
 }
 
 .form-add-friend {
@@ -149,6 +163,7 @@ select {
   border: 1px solid var(--color-light);
   border-radius: 4px;
   transition: 0.3s;
+  background-color: var(--color-bg);
 }
 
 input:focus,
