@@ -37,7 +37,7 @@ export default function App() {
       <div className="sidebar">
         <FriendList friends={initialFriends} />
         {showAddFriend && <FormAddFriend />}
-        <button className="butto  n" onClick={handleShowAddFriend}>
+        <button className="button" onClick={handleShowAddFriend}>
           {showAddFriend ? "Keluar" : "Tambah Teman"}
         </button>
       </div>
